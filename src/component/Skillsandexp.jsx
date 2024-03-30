@@ -17,8 +17,8 @@ const Skillsandexp = () => {
             <h1 className="text-4xl font-bold"><span className="text-yellow-300">Skills</span> And <span className="text-yellow-300">Internship</span></h1>
         </center>
         <center className="mainskillset w-10/12 mx-12">
-            <div className="mainSkill grid grid-cols-2">
-                <div className="firstmainskills grid grid-cols-4">
+            <div className="mainSkill">
+                <div className="firstmainskills">
                     {skillImage.map(image => <div className="subfirstmainskills my-4">
                         <img src={image.img} alt="" className="htmllogo" />
                     </div>)}

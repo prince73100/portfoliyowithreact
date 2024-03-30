@@ -1,10 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .backimage {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJpOSOC9Kn_cCau9iDIg_ZrlR91B3i7anYw&s');
-  min-height: 575px;
+  width: 100%;
   margin-top: -16px;
-  max-width: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,7 +14,9 @@
 .bodyImage {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5px;
 }
 
 .paragraph {
@@ -22,14 +26,30 @@
 }
 
 .project {
+  margin: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .cardsitem {
-  max-width: 30%;
+  max-width: 40%;
   margin: 10px 18px 10px 20px;
+}
+
+.mainSkill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.firstmainskills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
 }
 
 .subfirstmainskills {
@@ -38,27 +58,34 @@
   border-radius: 65px;
   background-color: aliceblue;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+}
+
+.secondmainskills {
+  width: 50%;
 }
 
 .htmllogo {
   padding: 20px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.subcontact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
 .footer {
   background-color: rgb(188, 192, 196);
-}
-
-.email {
-  display: grid;
-  grid-template-columns: auto auto;
-  max-width: 50%;
-  margin-left: 300px;
-}
-
-.mobnumber {
-  display: grid;
-  grid-template-columns: auto auto;
-  max-width: 50%;
 }
 
 .sociallink {
@@ -90,26 +117,3 @@
   color: rgb(13, 21, 27);
 }
 
-@media (max-width:1080px) {
-  .bodyImage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 70px;
-  }
-
-  .image {
-    margin-left: 70px;
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    background-color: yellow;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: column;
-  }
-
-}
