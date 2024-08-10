@@ -17,7 +17,7 @@ const BodyImage = () => {
                         Shri Ramswaroop Memorial University,Lucknow. CGPA 7.75</p>
                 </div>
             </div>
-            <center>
+            <center className='pb-10'>
                 <button className='btn'><a href="image/princeNauReu.pdf">Resume </a><span><MdAttachment /></span></button>
             </center>
         </div>

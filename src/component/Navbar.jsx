@@ -3,10 +3,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Experience', href: '#', current: false },
-    { name: 'Contact', href: '#', current: false },
-    { name: 'Project', href: '#', current: false },
-    { name: 'About', href: '#', current: false },
+    { name: 'Technical Skill', scrollfunc:()=>{window.scrollTo(0,1300)}, current: false },
+    { name: 'Contact', scrollfunc:()=>{window.scrollTo(0,1800)}, current: false },
+    { name: 'Project', scrollfunc:()=>{window.scrollTo(0,465)}, current: false },
+    { name: 'About', scrollfunc:()=>{window.scrollTo(0,0)}, current: false },
 
 ]
 
@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <div className="">
+        <div className="sticky top-0">
             <Disclosure as="nav" className="bg-gray-800">
                 {({ open }) => (
                     <>
@@ -45,10 +45,11 @@ export default function Navbar() {
                                                     key={item.name}
                                                     href={item.href}
                                                     className={classNames(
-                                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                        item.current ? 'bg-gray-900 text-white cursor-pointer' : 'text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer',
                                                         'rounded-md px-3 py-2 text-sm font-medium'
                                                     )}
                                                     aria-current={item.current ? 'page' : undefined}
+                                                    onClick={item.scrollfunc}
                                                 >
                                                     {item.name}
                                                 </a>
@@ -74,6 +75,7 @@ export default function Navbar() {
                                             'block rounded-md px-3 py-2 text-base font-medium'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
+                                        onClick={item.scrollfunc}
                                     >
                                         {item.name}
                                     </Disclosure.Button>

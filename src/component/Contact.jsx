@@ -14,13 +14,13 @@ const Contact = () => {
                 <h1 className="text-4xl font-bold mt-10">let's <i className="text-yellow-300">talk</i></h1>
             </center>
             <div className="contact mt-10">
-                <div className=" subcontact bg-slate-200 rounded">
-                    <span className="mt-4"><TfiEmail /></span>
-                    <h1 className="py-2">princepjng85@gmail.com</h1>
+                <div className="  bg-slate-200 rounded flex justify-center items-center gap-x-4 h-12 w-60">
+                    <span className=""><TfiEmail /></span>
+                    <h1 className="">princepjng85@gmail.com</h1>
                 </div>
-                <div className=" subcontact bg-slate-200 rounded">
-                    <span className="mt-4"><MdSendToMobile /></span>
-                    <h1 className="py-2">+91 7310070056</h1>
+                <div className="bg-slate-200 rounded flex justify-center items-center gap-x-4 h-12 w-60">
+                    <span className=""><MdSendToMobile /></span>
+                    <h1 className="">+917310070056</h1>
                 </div>
             </div>
             <center className="">

@@ -5,6 +5,7 @@ import BodyImage from './component/BodyImage'
 import Projectinfo from './component/ProjectInfo'
 import Skillsandexp from './component/Skillsandexp'
 import Contact from './component/Contact'
+import Topnavigator from './component/Topnavigator'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Projectinfo />
       <Skillsandexp />
       <Contact/>
+      <Topnavigator/>
     </>
   )
 }
